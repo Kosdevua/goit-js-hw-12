@@ -60,7 +60,6 @@ input:focus {
 button {
   border-radius: 8px;
   padding: 8px 16px;
-  width: 91px;
   margin-left: 8px;
 
   background-color: #4e75ff;
@@ -89,6 +88,7 @@ button:hover {
 li {
   width: calc((100% - 48px) / 3);
   border: 1px solid #808080;
+  overflow: hidden;
 }
 
 table {
@@ -146,4 +146,12 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.btn-load-more {
+}
+.container {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
 }
