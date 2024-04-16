@@ -1,5 +1,3 @@
-//У файлі render-functions.js створи функції для відображення елементів інтерфейсу.
-
 export function createGalleryMarkup(array) {
   return array
     .map(

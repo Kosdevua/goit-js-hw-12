@@ -17,8 +17,6 @@ let page = 1;
 formElement.addEventListener('submit', onSubmit);
 btnLoadMore.addEventListener('click', loadedMoreImages);
 
-//--
-
 async function onSubmit(event) {
   event.preventDefault();
 
@@ -31,7 +29,7 @@ async function onSubmit(event) {
   if (!searchQuery) return;
 
   try {
-    const { hits, totalHits } = await getPhotos(searchQuery, page); //
+    const { hits, totalHits } = await getPhotos(searchQuery, page);
     if (totalHits > 0) {
       iziToast.info({
         position: 'topRight',
@@ -84,8 +82,6 @@ async function onSubmit(event) {
     hiddeLoader();
   }
 }
-
-// --
 
 async function loadedMoreImages() {
   page += 1;
